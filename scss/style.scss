@@ -4,6 +4,7 @@
 @import "utilities";
 
 header {
+	// padding-top: 1rem;
 	.header__items {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -62,17 +63,17 @@ header {
 
 			.searchInp {
 				left: 1rem;
-				top: 6rem;
+				top: 7.5rem;
 				border-radius: 0.5rem;
 				border: 2px solid var(--primarylight-color);
-				padding: 0.7rem;
+				padding: 1rem 2rem;
 				display: none;
 				box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 			}
 
 			.deleteSearch {
-				top: 5.7rem;
-				left: 15.5rem;
+				top: 7.3rem;
+				left: 18rem;
 				z-index: 1;
 				display: none;
 			}
@@ -97,7 +98,8 @@ main {
 			align-items: center;
 
 			.hero__right {
-				padding-top: 4rem;
+				padding-top: 5rem;
+				padding-right: 2rem;
 
 				.hero__right--up {
 					padding-top: 10rem;
@@ -124,6 +126,8 @@ main {
 				}
 
 				.hero__right--down {
+					padding-top: 2rem;
+
 					.swiper {
 						padding-top: 2rem;
 						height: 20rem;

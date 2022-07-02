@@ -112,6 +112,11 @@ a {
   line-height: 5.8rem;
 }
 
+.text-6xl {
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
 .font-lighter {
   font-weight: 100;
 }
@@ -316,18 +321,18 @@ header .header__items .header__items--right .shopIcon:hover {
 
 header .header__items .header__items--right .searchInp {
   left: 1rem;
-  top: 6rem;
+  top: 7.5rem;
   border-radius: 0.5rem;
   border: 2px solid var(--primarylight-color);
-  padding: 0.7rem;
+  padding: 1rem 2rem;
   display: none;
   -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
           box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 header .header__items .header__items--right .deleteSearch {
-  top: 5.7rem;
-  left: 15.5rem;
+  top: 7.3rem;
+  left: 18rem;
   z-index: 1;
   display: none;
 }
@@ -357,7 +362,8 @@ main .hero .hero__wrapper {
 }
 
 main .hero .hero__wrapper .hero__right {
-  padding-top: 4rem;
+  padding-top: 5rem;
+  padding-right: 2rem;
 }
 
 main .hero .hero__wrapper .hero__right .hero__right--up {
@@ -392,6 +398,10 @@ main .hero .hero__wrapper .hero__right .hero__right--up h3 {
   color: var(--secondary-color);
   padding-top: 1rem;
   border-bottom: 2px solid var(--secondary-color);
+}
+
+main .hero .hero__wrapper .hero__right .hero__right--down {
+  padding-top: 2rem;
 }
 
 main .hero .hero__wrapper .hero__right .hero__right--down .swiper {
