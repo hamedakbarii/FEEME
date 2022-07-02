@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEME</title>
+
+    <link rel="icon" href="./assets/favicon/unnamed.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+        integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="header__items">
+
+                <div class="header__items--left flex-center">
+
+                    <p class="text-sm font-bold"><a href="#">New Arrivals</a></p>
+                    <p class="text-sm font-bold"><a href="#">Sales</a></p>
+                    <p class="text-sm font-bold"><a href="#">Catalouge</a></p>
+
+                </div>
+
+                <div class="header__items--center flex-column">
+
+                    <h2 class="text-2xl font-bold">FEEME</h2>
+                    <p class="text-sm font-normal">Best Fashion Shopping Expreinces</p>
+
+                </div>
+
+                <div class="header__items--right flex-center pos-relative">
+
+                    <i class="fa-solid fa-magnifying-glass text-lg pointer searchIcon"></i>
+                    <i class="fa-solid fa-circle-minus deleteSearch pos-absolute pointer text-lg"></i>
+
+                    <input type="search" class="searchInp  pos-absolute" placeholder="Search Here ..">
+
+                    <button class="btn btn--primary pointer"><a href="#" class="text-sm font-semi-bold">Sign
+                            up</a></button>
+
+                    <button class="btn btn--secondary pointer"><a href="#"
+                            class="text-sm font-semi-bold">Login</a></button>
+
+                    <i class="fa-solid fa-cart-shopping text-lg pointer shopIcon"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="hero">
+
+            <div class="container">
+
+                <div class="hero__wrapper">
+
+                    <div class="hero__left">
+                        <h2 class="text-sm font-semi-bold">Best Collection</h2>
+                        <h1 class="text-5xl font-bold">Express Your Mood<br> with Modern Style</h1>
+                        <p class="text-sm font-normal">Tell everyone about your mood and what you <br> think of your
+                            self
+                            . Express
+                            your self with
+                            our <br> best collection of the year.</p>
+
+                        <button class="btn btn--primary pointer"><a href="#">Shop Now <i
+                                    class="fa-solid fa-arrow-right"></i></a></button>
+                    </div>
+
+                    <div class="hero__right">
+
+                        <div class="hero__right--up">
+                            <h2 class="text-3xl font-bold">Flower shirt summer vibe !</h2>
+                            <p class="text-sm font-normal">the thing you can put on confidently . And at <br> least you
+                                can
+                                breathe with
+                                comfort using
+                                this <br> kind of lothes </p>
+                            <h3 class="text-lg font-semi-bold"><a href="#" clas>Add to cart <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                                    </svg></a></h3>
+                        </div>
+
+                        <div class="hero__right--down">
+
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="./assets/hero/engin-akyurt-JWZe-4hg9aA-unsplash.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/hero/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">Slide 3</div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper__title">
+
+                                    <div class="swiper__title--buttons">
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
+                                    </div>
+
+                                </div>
+
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+    <script src="./script/script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
