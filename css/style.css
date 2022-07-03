@@ -4,6 +4,7 @@
   --secondary-color: #6b696e;
   --gray-color: #939298;
   --primarylight-color: #dbad79;
+  --pink-color: #f1e0d0;
 }
 
 *,
@@ -440,11 +441,7 @@ main {
 }
 
 main .hero {
-  height: 100vh;
-  background-image: url(../assets/hero/thought-catalog-BlGmdY18CFQ-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: 85vh;
 }
 
 main .hero .hero__wrapper {
@@ -457,6 +454,19 @@ main .hero .hero__wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main .hero .hero__wrapper img {
+  left: 40rem;
+}
+
+main .hero .hero__wrapper .hero__circle {
+  width: 55rem;
+  height: 55rem;
+  border-radius: 50%;
+  background-color: var(--pink-color);
+  left: 35rem;
+  z-index: -1;
 }
 
 main .hero .hero__wrapper .hero__right {
@@ -602,7 +612,8 @@ main .hero .hero__wrapper .hero__left button i {
 }
 
 main .service {
-  background: #f1e0d0;
+  min-height: 70vh;
+  background: var(--pink-color);
 }
 
 main .service .service__wrapper {
@@ -611,15 +622,18 @@ main .service .service__wrapper {
 
 main .service .service__wrapper .service__title h3 {
   color: var(--secondary-color);
+  letter-spacing: 0.1rem;
 }
 
 main .service .service__wrapper .service__title h2 {
   color: var(--primary-color);
   text-shadow: 0.1rem 0.1rem var(--gray-color);
+  letter-spacing: 0.1rem;
 }
 
 main .service .service__wrapper .service__title p {
   color: var(--gray-color);
+  letter-spacing: 0.1rem;
 }
 
 main .service .service__wrapper .service__items {
@@ -713,15 +727,136 @@ main .service .service__wrapper .service__items .service__items--item .items__it
 main .service .service__wrapper .service__items .service__items--item p {
   color: var(--secondary-color);
   padding: 1rem 0;
+  letter-spacing: 0.1rem;
 }
 
 main .service .service__wrapper .service__items .service__items--item h4 {
   color: #333535;
+  letter-spacing: 0.1rem;
 }
 
 main .service .service__wrapper .service__items .service__items--item:hover {
-  background-color: #cfd1ce;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+main .collection {
+  padding-top: 5rem;
+}
+
+main .collection .collection__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+main .collection .collection__cards .collection__cards--left .cards__left--up {
+  min-height: 15vh;
+  background-color: var(--pink-color);
+  width: 60rem;
+  border-radius: 1rem;
+}
+
+main .collection .collection__cards .collection__cards--left .cards__left--up .left__up--left {
+  width: 60rem;
+  background-color: var(--pink-color);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+main .collection .collection__cards .collection__cards--left .cards__left--up .left__up--left h2 {
+  color: #333535;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 0;
+}
+
+main .collection .collection__cards .collection__cards--left .cards__left--up .left__up--left p {
+  color: var(--primary-color);
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 0;
+}
+
+main .collection .collection__cards .collection__cards--left .cards__left--up .left__up--left h3 {
+  color: var(--secondary-color);
+  padding-top: 1rem;
+}
+
+main .collection .collection__cards .collection__cards--left .cards__left--up img {
+  width: 25rem;
+  z-index: 1;
+}
+
+main .collection .collection__cards .collection__cards--left .cards__left--bottom {
+  margin-top: 1rem;
+  background-color: var(--pink-color);
+  width: 60rem;
+  border-radius: 1rem;
+}
+
+main .collection .collection__cards .collection__cards--left .cards__left--bottom .left__bottom--left {
+  width: 60rem;
+  background-color: var(--pink-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+main .collection .collection__cards .collection__cards--left .cards__left--bottom .left__bottom--left h2 {
+  color: #333535;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 0;
+}
+
+main .collection .collection__cards .collection__cards--left .cards__left--bottom .left__bottom--left p {
+  color: var(--primary-color);
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 0;
+}
+
+main .collection .collection__cards .collection__cards--left .cards__left--bottom .left__bottom--left h3 {
+  color: var(--secondary-color);
+  padding-top: 1rem;
+}
+
+main .collection .collection__cards .collection__cards--left .cards__left--bottom img {
+  width: 20rem;
+  z-index: 1;
+}
+
+main .collection .collection__cards .collection__cards--right {
+  background-color: var(--pink-color);
+  width: 60rem;
+  border-radius: 1rem;
+}
+
+main .collection .collection__cards .collection__cards--right .cards__right--left {
+  width: 60rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: 1;
+}
+
+main .collection .collection__cards .collection__cards--right .cards__right--left h2 {
+  color: #333535;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 0;
+}
+
+main .collection .collection__cards .collection__cards--right .cards__right--left p {
+  color: var(--primary-color);
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 0;
+}
+
+main .collection .collection__cards .collection__cards--right .cards__right--left h3 {
+  color: var(--secondary-color);
+  padding-top: 1rem;
+}
+
+main .collection .collection__cards .collection__cards--right img {
+  width: 45rem;
+  left: 22rem;
 }
 /*# sourceMappingURL=style.css.map */
