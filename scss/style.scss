@@ -58,6 +58,44 @@ header {
 				&:hover {
 					background-color: var(--primarylight-color);
 					box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+					animation: shake 0.5s;
+					animation-iteration-count: infinite;
+				}
+
+				@keyframes shake {
+					0% {
+						transform: translate(1px, 1px) rotate(0deg);
+					}
+					10% {
+						transform: translate(-1px, -2px) rotate(-1deg);
+					}
+					20% {
+						transform: translate(-3px, 0px) rotate(1deg);
+					}
+					30% {
+						transform: translate(3px, 2px) rotate(0deg);
+					}
+					40% {
+						transform: translate(1px, -1px) rotate(1deg);
+					}
+					50% {
+						transform: translate(-1px, 2px) rotate(-1deg);
+					}
+					60% {
+						transform: translate(-3px, 1px) rotate(0deg);
+					}
+					70% {
+						transform: translate(3px, 1px) rotate(-1deg);
+					}
+					80% {
+						transform: translate(-1px, -1px) rotate(1deg);
+					}
+					90% {
+						transform: translate(1px, 2px) rotate(0deg);
+					}
+					100% {
+						transform: translate(1px, -2px) rotate(-1deg);
+					}
 				}
 			}
 
@@ -208,6 +246,121 @@ main {
 
 					i {
 						padding-left: 0.5rem;
+					}
+				}
+			}
+		}
+	}
+
+	.service {
+		// background: rgb(2, 0, 36);
+		// background: linear-gradient(
+		// 	90deg,
+		// 	rgba(2, 0, 36, 1) 0%,
+		// 	rgba(215, 215, 237, 1) 0%,
+		// 	#cfd1ce 100%
+		// );
+
+		background: #f1e0d0;
+
+		.service__wrapper {
+			padding-top: 8rem;
+
+			.service__title {
+				h3 {
+					color: var(--secondary-color);
+				}
+				h2 {
+					color: var(--primary-color);
+					text-shadow: 0.1rem 0.1rem var(--gray-color);
+				}
+				p {
+					color: var(--gray-color);
+				}
+			}
+
+			.service__items {
+				padding-top: 4rem;
+				width: 100%;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.service__items--item {
+					width: 100%;
+					padding: 1rem;
+					border-radius: 1rem;
+					cursor: pointer;
+					transition: all 0.3s ease;
+
+					.items__item--icon {
+						width: 10rem;
+						height: 10rem;
+						background-color: snow;
+						border-radius: 1rem;
+
+						i {
+							font-size: 6rem;
+							padding: 2rem;
+							// color: #cfd1ce;
+							color: var(--primarylight-color);
+						}
+
+						&:hover {
+							animation: shake 0.5s;
+
+							@keyframes shake {
+								0% {
+									transform: translate(1px, 1px) rotate(0deg);
+								}
+								10% {
+									transform: translate(-1px, -2px) rotate(-1deg);
+								}
+								20% {
+									transform: translate(-3px, 0px) rotate(1deg);
+								}
+								30% {
+									transform: translate(3px, 2px) rotate(0deg);
+								}
+								40% {
+									transform: translate(1px, -1px) rotate(1deg);
+								}
+								50% {
+									transform: translate(-1px, 2px) rotate(-1deg);
+								}
+								60% {
+									transform: translate(-3px, 1px) rotate(0deg);
+								}
+								70% {
+									transform: translate(3px, 1px) rotate(-1deg);
+								}
+								80% {
+									transform: translate(-1px, -1px) rotate(1deg);
+								}
+								90% {
+									transform: translate(1px, 2px) rotate(0deg);
+								}
+								100% {
+									transform: translate(1px, -2px) rotate(-1deg);
+								}
+							}
+						}
+					}
+
+					p {
+						color: var(--secondary-color);
+						padding: 1rem 0;
+					}
+
+					h4 {
+						color: #333535;
+					}
+
+					&:hover {
+						background-color: #cfd1ce;
+						box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+							rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 					}
 				}
 			}
