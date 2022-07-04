@@ -22,6 +22,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1300px;
   margin: auto 3rem;
@@ -36,6 +40,7 @@ html {
   color: var(--secondary-color);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .btn--primary {
@@ -74,7 +79,7 @@ a {
 }
 
 .text-sm {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 2rem;
 }
 
@@ -770,6 +775,7 @@ main .collection .collection__cards .collection__cards--left .cards__left--up .l
   color: #333535;
   letter-spacing: 0.1rem;
   padding: 0.5rem 0;
+  text-shadow: 0.1rem 0.1rem var(--gray-color);
 }
 
 main .collection .collection__cards .collection__cards--left .cards__left--up .left__up--left p {
@@ -779,8 +785,10 @@ main .collection .collection__cards .collection__cards--left .cards__left--up .l
 }
 
 main .collection .collection__cards .collection__cards--left .cards__left--up .left__up--left h3 {
+  width: 15rem;
   color: var(--secondary-color);
   padding-top: 1rem;
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 main .collection .collection__cards .collection__cards--left .cards__left--up img {
@@ -807,6 +815,7 @@ main .collection .collection__cards .collection__cards--left .cards__left--botto
   color: #333535;
   letter-spacing: 0.1rem;
   padding: 0.5rem 0;
+  text-shadow: 0.1rem 0.1rem var(--gray-color);
 }
 
 main .collection .collection__cards .collection__cards--left .cards__left--bottom .left__bottom--left p {
@@ -816,8 +825,10 @@ main .collection .collection__cards .collection__cards--left .cards__left--botto
 }
 
 main .collection .collection__cards .collection__cards--left .cards__left--bottom .left__bottom--left h3 {
+  width: 15rem;
   color: var(--secondary-color);
   padding-top: 1rem;
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 main .collection .collection__cards .collection__cards--left .cards__left--bottom img {
@@ -841,22 +852,90 @@ main .collection .collection__cards .collection__cards--right .cards__right--lef
 main .collection .collection__cards .collection__cards--right .cards__right--left h2 {
   color: #333535;
   letter-spacing: 0.1rem;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
+  text-shadow: 0.1rem 0.1rem var(--gray-color);
 }
 
 main .collection .collection__cards .collection__cards--right .cards__right--left p {
   color: var(--primary-color);
   letter-spacing: 0.1rem;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 
 main .collection .collection__cards .collection__cards--right .cards__right--left h3 {
+  width: 15rem;
   color: var(--secondary-color);
   padding-top: 1rem;
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 main .collection .collection__cards .collection__cards--right img {
   width: 45rem;
   left: 22rem;
+}
+
+main .categories {
+  padding-top: 10rem;
+}
+
+main .categories .categories__wrapper .categories__title h3 {
+  color: #333535;
+  letter-spacing: 0.1rem;
+}
+
+main .categories .categories__wrapper .categories__title h2 {
+  color: var(--primary-color);
+  letter-spacing: 0.1rem;
+  text-shadow: 0.1rem 0.1rem var(--gray-color);
+}
+
+main .categories .categories__wrapper .categories__title p {
+  color: var(--secondary-color);
+  letter-spacing: 0.1rem;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+main .categories .categories__wrapper .categories__items {
+  padding-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 7rem;
+}
+
+main .categories .categories__wrapper .categories__items .categories__items--item {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main .categories .categories__wrapper .categories__items .categories__items--item .items__item--pic {
+  background-color: var(--pink-color);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  width: 22rem;
+  height: 22rem;
+}
+
+main .categories .categories__wrapper .categories__items .categories__items--item .items__item--pic img {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 1.5rem;
+}
+
+main .categories .categories__wrapper .categories__items .categories__items--item h3 {
+  padding: 1rem 0;
+  color: #333535;
+}
+
+main .categories .categories__wrapper .categories__items .categories__items--item:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+main .categories .categories__wrapper button {
+  margin: 2rem 0;
+  letter-spacing: 0.1rem;
 }
 /*# sourceMappingURL=style.css.map */
