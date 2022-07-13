@@ -31,6 +31,25 @@ body {
   margin: auto 3rem;
 }
 
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .btn {
   font-size: 1rem;
   font-weight: 600;
@@ -441,6 +460,25 @@ header .header__items .header__items--right .deleteSearch {
   display: none;
 }
 
+header .header__items .header__items--right .moreIcon {
+  padding: 1rem;
+  border-radius: 1rem;
+  display: none;
+}
+
+header .header__items .header__items--right .moreIcon:hover {
+  background-color: var(--primarylight-color);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media (max-width: 750px) {
+  header .header__items {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 main {
   padding-top: 2rem;
 }
@@ -462,7 +500,10 @@ main .hero .hero__wrapper {
 }
 
 main .hero .hero__wrapper img {
-  left: 40rem;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 main .hero .hero__wrapper .hero__circle {
@@ -470,8 +511,11 @@ main .hero .hero__wrapper .hero__circle {
   height: 55rem;
   border-radius: 50%;
   background-color: var(--pink-color);
-  left: 35rem;
   z-index: -1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 main .hero .hero__wrapper .hero__right {
@@ -518,59 +562,44 @@ main .hero .hero__wrapper .hero__right .hero__right--down {
 }
 
 main .hero .hero__wrapper .hero__right .hero__right--down .swiper {
-  padding-top: 2rem;
   height: 20rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  background-color: var(--primarylight-color);
+}
+
+main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper-wrapper {
+  border-radius: 1rem;
 }
 
 main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper-wrapper .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1rem;
-}
-
-main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper-wrapper .swiper-slide img {
-  width: 10rem;
   background-size: cover;
-  border-radius: 0.5rem;
 }
 
-main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper__title {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper-wrapper .slide1 {
+  background-image: url(../assets/swiper/autumn-goodman-vTL_qy03D1I-unsplash.jpg);
 }
 
-main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper__title .swiper__title--buttons .swiper-button-prev {
-  color: var(--primary-color);
-  left: 22rem;
-  top: 20px;
+main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper-wrapper .slide2 {
+  background-image: url(../assets/swiper/kim-carpenter-IHIgnhLvz5Q-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper__title .swiper__title--buttons .swiper-button-prev:after {
+main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper-wrapper .slide3 {
+  background-image: url(../assets/swiper/malik-skydsgaard-MlL4ejH4aRE-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper-button-next:after,
+main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper-button-prev:after {
   font-size: 2rem;
+  color: black;
 }
 
-main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper__title .swiper__title--buttons .swiper-button-next {
-  color: var(--primary-color);
-  top: 20px;
-}
-
-main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper__title .swiper__title--buttons .swiper-button-next::after {
-  font-size: 2rem;
+main .hero .hero__wrapper .hero__right .hero__right--down .swiper .swiper-pagination-bullet-active {
+  background-color: black;
 }
 
 main .hero .hero__wrapper .hero__left {

@@ -115,6 +115,21 @@ header {
 				z-index: 1;
 				display: none;
 			}
+
+			.moreIcon {
+				padding: 1rem;
+				border-radius: 1rem;
+				display: none;
+
+				&:hover {
+					background-color: var(--primarylight-color);
+					box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				}
+			}
+		}
+
+		@media (max-width: 750px) {
+			grid-template-columns: repeat(1, 1fr);
 		}
 	}
 }
@@ -131,7 +146,9 @@ main {
 			align-items: center;
 
 			img {
-				left: 40rem;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
 			}
 
 			.hero__circle {
@@ -139,8 +156,10 @@ main {
 				height: 55rem;
 				border-radius: 50%;
 				background-color: var(--pink-color);
-				left: 35rem;
 				z-index: -1;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
 			}
 
 			.hero__right {
@@ -175,51 +194,41 @@ main {
 					padding-top: 2rem;
 
 					.swiper {
-						padding-top: 2rem;
 						height: 20rem;
+						width: 20rem;
+						border-radius: 0.5rem;
+						background-color: var(--primarylight-color);
 
 						.swiper-wrapper {
-							.swiper-slide {
-								// background: var(--primarylight-color);
-								display: flex;
-								justify-content: center;
-								align-items: center;
-								font-size: 1rem;
+							border-radius: 1rem;
 
-								img {
-									width: 10rem;
-									background-size: cover;
-									border-radius: 0.5rem;
-								}
+							.swiper-slide {
+								background-size: cover;
+							}
+
+							.slide1 {
+								background-image: url(../assets/swiper/autumn-goodman-vTL_qy03D1I-unsplash.jpg);
+							}
+							.slide2 {
+								background-image: url(../assets/swiper/kim-carpenter-IHIgnhLvz5Q-unsplash.jpg);
+								background-size: contain;
+								background-repeat: no-repeat;
+							}
+							.slide3 {
+								background-image: url(../assets/swiper/malik-skydsgaard-MlL4ejH4aRE-unsplash.jpg);
+								background-size: contain;
+								background-repeat: no-repeat;
 							}
 						}
 
-						.swiper__title {
-							width: 100%;
-							display: flex;
-							justify-content: center;
-							align-items: center;
+						.swiper-button-next:after,
+						.swiper-button-prev:after {
+							font-size: 2rem;
+							color: black;
+						}
 
-							.swiper__title--buttons {
-								.swiper-button-prev {
-									color: var(--primary-color);
-									left: 22rem;
-									top: 20px;
-
-									&:after {
-										font-size: 2rem;
-									}
-								}
-
-								.swiper-button-next {
-									color: var(--primary-color);
-									top: 20px;
-
-									&::after {
-										font-size: 2rem;
-									}
-								}
-							}
+						.swiper-pagination-bullet-active {
+							background-color: black;
 						}
 					}
 				}
